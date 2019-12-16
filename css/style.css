@@ -1,0 +1,23 @@
+body{
+    background-image: url(asset/background/title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+    padding-top: 60px;
+}
+#title{
+    font-size: 48pt;
+    background-color: rgba(85, 85, 85, 0.418);
+    color: yellow;
+}
+#btn-next{
+    width: 120px;
+    height: 40px;   
+}
+#BGM-btn{
+    float: left;
+    margin: 0;
+    width: 120px;
+    height: 50px;
+}
