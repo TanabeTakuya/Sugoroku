@@ -8,3 +8,8 @@ create table userdata(
 	lose int,
 	PRIMARY KEY(id)
 );
+
+create table stage1(
+	id int,
+	id int
+);
