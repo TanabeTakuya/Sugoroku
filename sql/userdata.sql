@@ -1,3 +1,5 @@
+USE db1541;
+
 create table userdata(
 	id int,
 	name varchar(16),
