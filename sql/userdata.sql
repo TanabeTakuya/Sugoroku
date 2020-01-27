@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 USE db1541;
 
->>>>>>> 0e4d8bbc713a2bb30a4cd3374059adef535acb98
 create table userdata(
 	id int,
 	name varchar(16),
@@ -11,11 +8,16 @@ create table userdata(
 	lose int,
 	PRIMARY KEY(id)
 );
-<<<<<<< HEAD
-=======
 
 create table stage1(
-	id int,
+	square int,
 	id int
 );
->>>>>>> 0e4d8bbc713a2bb30a4cd3374059adef535acb98
+
+create table room(
+	roomid int,
+	player1id int,
+	player2id int,
+	player1_current_point int,
+	player2_current_point int
+);
