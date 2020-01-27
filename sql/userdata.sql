@@ -13,3 +13,11 @@ create table stage1(
 	square int,
 	id int
 );
+
+create table room(
+	roomid int,
+	player1id int,
+	player2id int,
+	player1_current_point int,
+	player2_current_point int
+);
