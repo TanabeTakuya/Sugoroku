@@ -20,6 +20,25 @@
                 <button id="btn-user-login">login</button>
             </div>
         </form>
-        <script src="js/script.js"></script>
+        <script>
+                document.querySelector("#btn-user-login").addEventListener("click", (e)=>{
+                    let name = document.querySelector("#name-text");
+                    let pw = document.querySelector("#pass-text")
+                    if ( (name.value == "") || (pw.value == "") ){
+                        alert("入力してください");
+                        if(name.value == ""){
+                            name.focus();
+                            name.style.backgroundColor = "Pink";
+                            e.preventDefault();
+                        }
+                        if(pw.value == ""){
+                            pw.focus();
+                            pw.style.backgroundColor = "Pink";
+                            e.preventDefault();
+                        }    
+                        e.preventDefault();          
+                    }
+                });  
+            </script>
     </body>
 </html>

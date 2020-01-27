@@ -1,15 +1,18 @@
 <?php
     require_once('common.php');
-    $name = $_GET['name'];
-    $pw = $_GET['pw'];
-    $data = getDB1('select name, from userdata where name=?', [$name]);
+    $name = isset($_GET['name'])? $_GET['name']:null;
+    $pw = isset($_GET['pw'])? $_GET['pw']:null;
+    $data = getDB1('select max(id) as maxid from userdata');
+    $i = $data['maxid'] + 1;
+    $data = getDB1('select name from userdata where name=?', [$name]);
 
     if( $data['name'] == $name ){
         echo "既に使われている名前です。";
-        $credata = "insert into userdata(name, pw) values(:name, :pw)";
-        $credata->bindParam(':name', $name);
-		$credata->bindParam(':pw', $pw);
     }
-    else{
-        echo "create";
+    else{        
+        $credata = "insert into userdata(id, name, pw) values(?, ?, ?)";
+        insertDB($credata, [$i,$name,$pw]);
+        echo "OK";
+        header("location: play/login.html");
     }
+?>

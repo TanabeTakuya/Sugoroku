@@ -1,8 +1,8 @@
 <?php
-
-	$dsn = 'mysql:dbname=db1541;host=localhost';
-	$user = 'my1541';
-	$pw = 'recdautv';
+function getDB1($sql, $param=[]){
+	$dsn = 'mysql:dbname=userdata;host=localhost';
+	$user = 'senpai';
+	$pw = 'indocurry';
 	
 	$dbh = new PDO($dsn, $user, $pw);
 	$sth = $dbh->prepare($sql);
@@ -10,6 +10,14 @@
 	
 	return($sth->fetch(PDO::FETCH_ASSOC));
 }
-
+function insertDB($sql, $param=[]){
+	$dsn = 'mysql:dbname=userdata;host=localhost';
+	$user = 'senpai';
+	$pw = 'indocurry';
+	
+	$dbh = new PDO($dsn, $user, $pw);
+	$sth = $dbh->prepare($sql);
+	$sth->execute($param);
+	}
 ?>
 
