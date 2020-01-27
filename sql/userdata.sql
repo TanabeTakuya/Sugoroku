@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+USE db1541;
+
+>>>>>>> 0e4d8bbc713a2bb30a4cd3374059adef535acb98
 create table userdata(
 	id int,
 	name varchar(16),
@@ -6,3 +11,11 @@ create table userdata(
 	lose int,
 	PRIMARY KEY(id)
 );
+<<<<<<< HEAD
+=======
+
+create table stage1(
+	id int,
+	id int
+);
+>>>>>>> 0e4d8bbc713a2bb30a4cd3374059adef535acb98
