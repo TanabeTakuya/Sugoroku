@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Create</title>
+        <link rel="stylesheet" href="../css/style.css">        
+    </head>
+    <body>
+        <h1 id="login-title">Create</h1><br>
+        <h3 class="user-login">Name</h3>
+        <div class="text-box">
+            <input type="text" id="name-text" name="name">
+        </div>
+        <h3 class="user-login">PassWord</h3>
+        <div class="text-box">
+            <input type="password" id="pass-text" name="pw">
+        </div> 
+        <form action="../usercreate.php">
+            <div class="btn-centaer">
+                <button id="btn-user-create">create</button>
+            </div>
+        </form>
+        <script>
+            document.querySelector("#btn-user-create").addEventListener("click", (e)=>{
+                let name = document.querySelector("#name-text");
+                let pw = document.querySelector("#pass-text")
+                if ( (name.value == "") || (pw.value == "") ){
+                    alert("入力してください");
+                    if(name.value == ""){
+                        name.focus();
+                        name.style.backgroundColor = "Pink";
+                        e.preventDefault();
+                    }
+                    if(pw.value == ""){
+                        pw.focus();
+                        pw.style.backgroundColor = "Pink";
+                        e.preventDefault();
+                    }    
+                    e.preventDefault();          
+                }
+            });  
+        </script>
+    </body>
+</html>

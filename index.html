@@ -4,14 +4,22 @@
         <meta charset="utf-8">
         <title></title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="script.js"></script>
+        
     </head>
     <body>
-        <audio id="TitleBGM" src="bgm/TitleBGM.mp3" loop></audio>
-        <button id="BGM-btn" type="button">ミュート中</button>
-        <h1 id="title">すごろく</h1>
-        <form action="quiz.html">
-            <button id="btn-next">Start</button>
+        <audio id="TitleBGM" src="resources/audio/TopBGM.mp3" loop></audio>
+        <button id="BGM-btn" type="button">ミュート中</button><br>
+        <h1 id="title">すごろく</h1><br>
+        <form action="play/login.html">
+            <div class="btn-centaer">
+                <button id="btn-login">Login</button>
+            </div>
         </form> 
+        <form action="play/login.html">
+            <div class="btn-centaer">
+                <button id="btn-new">New</button>
+            </div>
+        </form> 
+        <script src="js/script.js"></script>
     </body>
 </html>
