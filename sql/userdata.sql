@@ -28,4 +28,8 @@ create table playdata(
 	PRIMARY KEY(roomid)
 );
 
+SELECT player1id, player2id, player1_current_point, player2_current_point
+FROM room A, playerdata B
+WHERE A.roomid = B.roomid;
+
 
