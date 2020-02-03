@@ -9,7 +9,6 @@
     if($data['num'] == 0){
         $creroom = "insert into room(roomid, player1id) values(1, ?)";
         insertroomDB($creroom, [$_GET['id']]);
-        echo 'aa';
     }
     else{
         for($i = 1; $i <= $data['num']; $i++){
@@ -33,6 +32,6 @@
         $data = getDB1('select roomid, player1id, player2id from room where roomid=1');
         //シーン遷移
         header("location: play/gameplay.php?player1id="
-        .$data['player1id']."&player2id=".$data['player2id']);
+        .$data['player1id']."&player2id=".$data['player2id']."&myid=".$_GET['id']);
     }
     
