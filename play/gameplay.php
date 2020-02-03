@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
     	<title>Play</title>
        <link rel="stylesheet" href="../css/style.css">
+       <?php
+       	echo $_GET['player1id'];
+       	?>
     </head>
     <body>
       	<h1 id="login-title">Play</h1><br>
