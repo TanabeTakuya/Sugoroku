@@ -1,0 +1,16 @@
+    else{
+        for($i = 1; $i <= $data['num']; $i++){
+            $roomdata = getDB('select player2id from room where id='.$i);
+            if($roomdata['player2id'] == null){
+                $up = ("update room set player2id=".[$_GET[id]]."where id=".$i);
+                roomDB($up);
+                break;
+            }
+        }
+    }
+    $roomdata = getDB('select player2id from room');
+
+    if($roomdata['player2id'] != null){
+        header("location: play/gameplay.html");
+
+    }
