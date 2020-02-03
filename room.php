@@ -33,6 +33,6 @@
         $data = getDB1('select roomid, player1id, player2id from room where roomid=1');
         //シーン遷移
         header("location: play/gameplay.php?player1id="
-        .$data['player1id']."player2id=".$data['player2id']);
+        .$data['player1id']."&player2id=".$data['player2id']);
     }
     
