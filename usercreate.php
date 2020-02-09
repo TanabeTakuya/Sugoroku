@@ -10,7 +10,7 @@
         echo "既に使われている名前です。";
     }
     else{        
-        $credata = "insert into userdata(id, name, pw) values(?, ?, ?)";
+        $credata = "insert into userdata(id, name, pw, win, lose) values(?, ?, ?, 0, 0)";
         insertDB($credata, [$i,$name,$pw]);
         echo "OK";
         header("location: play/login.html");

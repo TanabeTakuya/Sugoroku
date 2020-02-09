@@ -1,0 +1,42 @@
+body{
+    position: relative;
+}
+
+#current-state{
+    text-align: center;
+    font-size: 100px;
+    top: 5%;
+}
+
+#player{
+    position: relative;
+    width: 100%;
+    top: 42px;
+    text-align: center;
+}
+
+#play-area{
+    position: relative;
+}
+
+#other{
+    position: absolute;
+    top: 30px;
+    left: 47%;
+}
+
+#stage{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#rival{
+    position: absolute;
+    top: 12px;
+    left: 31px;
+}
+
+#button{
+    text-align: center;
+}

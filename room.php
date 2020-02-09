@@ -34,4 +34,3 @@
         header("location: play/gameplay.php?player1id="
         .$data['player1id']."&player2id=".$data['player2id']."&myid=".$_GET['id']);
     }
-    
