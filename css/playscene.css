@@ -1,5 +1,19 @@
 body{
     position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+
+#main{
+    position: absolute;
+    width: 100%;
+}
+
+#background{
+    position: absolute;
+    width: 100%;
+    background-size: contain;
+    top: -200px;
 }
 
 #current-state{
@@ -39,4 +53,28 @@ body{
 
 #button{
     text-align: center;
+}
+
+#going-button{
+    font-size: 50px;
+    padding: 12px, 100px;
+     
+    background-color: #4169e1;
+
+    color: #fff;
+}
+
+#going-button:hover {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+#going-button:active {
+    background-color: #00008b;
+    color: #fff;
+}
+
+#going-button:disabled {
+    background-color: #4169e1;
+    color: #4682b4;
 }

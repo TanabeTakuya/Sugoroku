@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../css/playscene.css">
   </head>
   <body>
+    <img id="background" src="../img/Background.jpg">
+    <div id="main">
     <div id="current-state">GameStart</div>
     <div id="button">
       <input type="button" id="going-button" value="進む">
@@ -27,6 +29,7 @@
     </div>
     <div id = "player">
       <img id="player-img" src="../img/Player2.png">
+    </div>
     </div>
     </div>
     <script type="text/javascript">
