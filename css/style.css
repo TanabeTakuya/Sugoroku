@@ -1,5 +1,8 @@
 body{
     margin: 0;
+    background-image: url(../resources/image/title.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #BGM-btn{
     float: left;
