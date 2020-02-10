@@ -28,7 +28,7 @@ going_button.addEventListener("click", function(){
     }
     else{
         fetch("../api/gameend.php");
-        
+
         window.location.href = "../index.html";
     }
 });
